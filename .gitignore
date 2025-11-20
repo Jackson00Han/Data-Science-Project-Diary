@@ -1,3 +1,66 @@
-*.log
+# === Python 编译文件 ===
 __pycache__/
-temp/*
+*.py[cod]
+*$py.class
+
+# === 虚拟环境 ===
+.venv/
+venv/
+env/
+
+# === Jupyter Notebook 缓存 ===
+.ipynb_checkpoints/
+
+# === 日志与临时文件 ===
+*.log
+logs/
+tmp/
+temp/
+
+# === 数据文件（按需要保留/删除某些规则）===
+data/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# 如果你想跟踪某些小的 csv，可以在上面规则后面用 ! 取消忽略，比如：
+# !data/example_small.csv
+
+# === 模型文件 ===
+models/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.pb
+*.onnx
+
+# === 配置 / 环境文件 ===
+*.env
+.env.*
+*.ini
+*.cfg
+*.json5
+
+# === IDE / 编辑器 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === 操作系统生成的垃圾文件 ===
+.DS_Store
+Thumbs.db
+
+# === TensorBoard 等输出 ===
+runs/
+events.out.tfevents.*
+
+# === 其他你不想提交的大文件目录(按需保留) ===
+outputs/
+results/
